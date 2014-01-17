@@ -14,6 +14,7 @@ group :test do
   gem "minitest-rails-capybara"
 end
 
+gem 'pry-rails'
 # group :development do
 #   gem 'guard-minitest'
 #   gem 'spring'
