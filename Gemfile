@@ -14,10 +14,10 @@ group :test do
   gem "minitest-rails-capybara"
 end
 
-group :development do
-  gem 'guard-minitest'
-  gem 'spring'
-end
+# group :development do
+#   gem 'guard-minitest'
+#   gem 'spring'
+# end
 
 group :doc do
   gem 'sdoc', require: false
