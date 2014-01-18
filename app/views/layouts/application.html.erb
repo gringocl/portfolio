@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat csstransforms no-csstransforms3d csstransitions" lang="en"><!--<![endif]-->
 <head>
-  <title>Miles Starkenburg's</title>
+<title><%= title  %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.ico'  %>
+  <%= stylesheet_link_tag "application", "http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic"  %>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport", content="<%= meta_viewport  %>"/>
+  <meta name="description", content="<%= meta_description  %>"/>
+  <meta name="keywords", content="<%= meta_keywords  %>"/>
+  <meta name="author", content="<%= meta_author  %>"/>
 </head>
 <body>
 

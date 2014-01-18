@@ -1,47 +1,47 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat csstransforms no-csstransforms3d csstransitions" lang="en"><!--<![endif]-->
-<head>
-	<!-- Metas
-	================================================== -->
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-	<meta name="description" content="Birva - Responsive Multipurpose One Page Theme" />
-	<meta name="keywords" content="foundation ,html5,css3,jquery,portfolio,creative,design,personal" />
-	<meta name="author" content="" />
-	
-	<!-- Page Title 
-	================================================== -->
-	<title>BIRVA | Responsive Portfolio Theme</title>
-	
-	<!-- Favicon 
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico"/>
-	
-	<!-- Google fonts
-	================================================== --> 
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>   
-   
-   <!-- Foundation Responsive Library
-	================================================== -->
-	<link rel="stylesheet" type="text/css" href="css/foundation.css"/>
-	
-	<!--font-awesome
-	================================================== -->
-	<link rel="stylesheet" href="css/font-awesome.css"/>
-	
-	<!-- Plugin CSS 
-	================================================== -->    
-	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/>
-	<link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
-	
-	<!-- CSS Custom
-	================================================== -->    
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-  
-</head>
-<body>
+<!-- <!DOCTYPE html> -->
+<!-- <!&#45;&#45;[if IE 8]><html class="no&#45;js lt&#45;ie9" lang="en" > <![endif]&#45;&#45;> -->
+<!-- <!&#45;&#45;[if gt IE 8]><!&#45;&#45;> -->
+<!-- <html class=" js no&#45;touch svg inlinesvg svgclippaths no&#45;ie8compat csstransforms no&#45;csstransforms3d csstransitions" lang="en"><!&#45;&#45;<![endif]&#45;&#45;> -->
+<!-- <head> -->
+<!-- 	<!&#45;&#45; Metas -->
+<!-- 	================================================== &#45;&#45;> -->
+<!-- 	<meta http&#45;equiv="content&#45;type" content="text/html; charset=UTF&#45;8"/> -->
+<!--     <meta name="viewport" content="width=device&#45;width,initial&#45;scale=1.0"/> -->
+<!-- 	<meta name="description" content="Birva &#45; Responsive Multipurpose One Page Theme" /> -->
+<!-- 	<meta name="keywords" content="foundation ,html5,css3,jquery,portfolio,creative,design,personal" /> -->
+<!-- 	<meta name="author" content="" /> -->
+<!-- 	 -->
+<!-- 	<!&#45;&#45; Page Title  -->
+<!-- 	================================================== &#45;&#45;> -->
+<!-- 	<title>BIRVA | Responsive Portfolio Theme</title> -->
+<!-- 	 -->
+<!-- 	<!&#45;&#45; Favicon  -->
+<!-- 	================================================== &#45;&#45;> -->
+<!-- 	<link rel="shortcut icon" href="images/favicon.ico"/> -->
+<!-- 	 -->
+<!-- 	<!&#45;&#45; Google fonts -->
+<!-- 	================================================== &#45;&#45;>  -->
+<!-- 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>    -->
+<!--     -->
+<!--    <!&#45;&#45; Foundation Responsive Library -->
+<!-- 	================================================== &#45;&#45;> -->
+<!-- 	<link rel="stylesheet" type="text/css" href="css/foundation.css"/> -->
+<!-- 	 -->
+<!-- 	<!&#45;&#45;font&#45;awesome -->
+<!-- 	================================================== &#45;&#45;> -->
+<!-- 	<link rel="stylesheet" href="css/font&#45;awesome.css"/> -->
+<!-- 	 -->
+<!-- 	<!&#45;&#45; Plugin CSS  -->
+<!-- 	================================================== &#45;&#45;>     -->
+<!-- 	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/> -->
+<!-- 	<link rel="stylesheet" type="text/css" href="css/flexslider.css"/> -->
+<!-- 	 -->
+<!-- 	<!&#45;&#45; CSS Custom -->
+<!-- 	================================================== &#45;&#45;>     -->
+<!-- 	<link rel="stylesheet" type="text/css" href="css/style.css"/> -->
+<!--    -->
+<!-- </head> -->
+<!-- <body> -->
 
 <!-- pre loder -->
 	<div id="preloader">
@@ -86,7 +86,7 @@
 					<div class="large-10 large-centered columns text-center">
 						<div class="banner-title title">							
 							<h1 class="fadeInUp"><span class="sideline"></span>I AM AJAY MATHASURIYA <span class="sideline"></span></h1>
-							<h2 class="fadeInUp">web designer <img src="img/04-and.png" height="32" width="19" alt=""/> front-end developer </h2>
+							<h2 class="fadeInUp">web designer  front-end developer </h2>
 						</div>
 						<a class="smooth-scroll" href="#about-scroll">
 							<div class="btn">SHOW ME MORE</div>
@@ -95,7 +95,7 @@
 				</div>
 				<!-- End Slid Content -->
 				<!-- Slid Image -->
-				<img class="slider-bg" alt="Slider Background" src="img/02-HomeSlider.jpg" />
+				<%= image_tag "02-HomeSlider.jpg", class: "slider-bg", alt: "Slider Background" %>
 				<!-- End Slid Image -->
 			</li>			
 			<li class="second">
@@ -104,7 +104,7 @@
 					<div class="large-10 large-centered columns text-center">
 						<div class="banner-title title">
 							<h1 class="fadeInUp"><span class="sideline"></span>I LIKE TO WATCH MOVIE<span class="sideline"></span></h1>
-							<h2 class="fadeInUp">web designer <img src="img/04-and.png" height="32" width="19" alt=""/> front-end developer </h2>
+							<h2 class="fadeInUp">web designer <%= image_tag "04-and.png", height: "32", width: "19"%> front-end developer </h2>
 						</div>
 						<a class="smooth-scroll" href="#about-scroll">
 							<div class="btn">SHOW ME MORE</div>
@@ -113,7 +113,7 @@
 				</div>
 				<!-- End Slid Content -->
 				<!-- Slid Image -->
-				<img class="slider-bg" alt="Slider Background" src="img/02-HomeSlider.jpg" />
+				<%= image_tag "02-HomeSlider.jpg", class: "slider-bg", alt: "Slider Background" %>
 				<!-- End Slid Image -->
 			</li>			
 			<li class="third">
@@ -122,7 +122,7 @@
 					<div class="large-10 large-centered columns text-center">
 						<div class="banner-title title">
 							<h1 class="fadeInUp"><span class="sideline"></span>I AM A BIKE RIDER<span class="sideline"></span></h1>
-							<h2 class="fadeInUp">web designer <img src="img/04-and.png" height="32" width="19" alt=""/> front-end developer </h2>
+              <h2 class="fadeInUp">web designer <%= image_tag "04-and.png", height: "32", width: "19"%> front-end developer </h2>
 						</div>
 						<a class="smooth-scroll" href="#about-scroll">
 							<div class="btn">SHOW ME MORE</div>
@@ -131,7 +131,7 @@
 				</div>
 				<!-- End Slid Content -->
 				<!-- Slid Image -->
-				<img class="slider-bg" alt="Slider Background" src="img/02-HomeSlider.jpg" />
+				<%= image_tag "02-HomeSlider.jpg", class: "slider-bg", alt: "Slider Background" %>
 				<!-- End Slid Image -->
 			</li>			
 		</ul>
@@ -141,7 +141,7 @@
 <!-- =========== * About Section * =========== -->
 <a id="about-scroll"></a>
 <section id="about" class="skin-secondary clearfix" >
-<img alt="" src="img/21-content_header_1.png" class="parallax-content_header">
+<%= image_tag "21-content_header_1.png", class: "parallax-content_header" %>
 	<!-- About Heading-->
 	<div class="row">
 		<div class="large-12 columns text-center">
@@ -298,7 +298,7 @@ Who I am
 	</div>
 	<!-- End of Experiences block -->
 	<!-- Cross footer image -->		
-	<img alt="" src="img/21-content_footer_1.png" class="parallax-content_footer">
+	<%= image_tag "21-content_footer_1.png", class: "parallax-content_footer" %>
 	<!-- end of cross footer image -->		
 </section>
 <!--end of About section-->
@@ -306,210 +306,210 @@ Who I am
 <div class="gallery skin-primary">
 		<ul class="images-container" style="display: block;">
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto"  class="image-link"><img src="img/gallery-thumbnails/03-gallery-img1.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto"  class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img1.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate1">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img2.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img2.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate2">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img3.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img3.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate3">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img4.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img4.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate4">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img5.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img5.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate5">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img6.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img6.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate6">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img3.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img3.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate7">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img2.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img2.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate8">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img4.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img4.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate9">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img1.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img1.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate10">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img3.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img3.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate11">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img4.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img4.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate12">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img5.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img5.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate13">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img6.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img6.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate14">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img2.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img2.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate15">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img1.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img1.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate16">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img5.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img5.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate17">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img3.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img3.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate18">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img1.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img1.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate19">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img2.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img2.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate20">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img3.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img3.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate21">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img5.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img5.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate22">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img3.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img3.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate23">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img6.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img6.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate24">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img2.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img2.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate25">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img3.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img3.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate26">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img4.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img4.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate27">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img6.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img6.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate28">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img5.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img5.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate29">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
 				</a>
 			</li>
 			<li>
-				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><img src="img/gallery-thumbnails/03-gallery-img1.jpg" alt=""></a>
+				<a href="img/gallery-fullscreen/04-gallery-img-fullscreen.jpg" data-rel="prettyPhoto" class="image-link"><%= image_tag "gallery-thumbnails/03-gallery-img1.jpg" %></a>
 				<a href="#" class="text-link">
 					<h6 class="title-large gallery-text-rotate30">Shaping Vision, We love what we do</h6>
 					<h6 class="title-small">Shaping Vision</h6>
@@ -521,7 +521,7 @@ Who I am
 <!-- =========== * Skill Section * =========== -->
 <a id="skill-scroll"></a>
 <section id="skill" class="skin-secondary clearfix">
-	<img alt="" src="img/21-content_header_1.png" class="parallax-content_header "/>
+	<%= image_tag "21-content_header_1.png", class: "parallax-content_header" %>
 	<!--skill section Heading -->
 	<div class="row">
 		<div class="large-12 columns text-center">
@@ -546,7 +546,7 @@ Who I am
 		<div class="team-slider">
 		   <div class="skill-block">	
 				<!-- skill Front section -->
-				<img alt="" src="img/05-skill-01.png"/>
+				<%= image_tag "05-skill-01.png" %>
 				<h4 class="my-skill-title">Photoshop</h4>
 				
 				<!-- End skill Front section -->
@@ -562,7 +562,7 @@ Who I am
 			</div>
 			<div class="skill-block">
 				<!-- skill Front section -->
-				<img alt="" src="img/05-skill-02.png"/>
+				<%= image_tag "05-skill-02.png" %>
 				<h4 class="my-skill-title">Wordpress</h4>
 				
 				<!-- End skill Front section -->
@@ -579,7 +579,7 @@ Who I am
 			</div>			
 			<div class="skill-block">
 				<!-- skill Front section -->
-				<img alt="" src="img/05-skill-03.png"/>
+				<%= image_tag "05-skill-03.png" %>
 				<h4 class="my-skill-title">HTML5/CSS3</h4>
 				
 				<!-- End skill Front section -->
@@ -595,7 +595,7 @@ Who I am
 			</div>	
 			 <div class="skill-block">
 				<!-- skill Front section -->
-				<img alt="" src="img/05-skill-04.png"/>
+				<%= image_tag "05-skill-04.png" %>
 				<h4 class="my-skill-title">jQuery</h4>
 				  
 				<!-- End skill Front section -->
@@ -611,7 +611,7 @@ Who I am
 			</div>	
 			<div class="skill-block">
 				<!-- skill Front section -->
-				<img alt="" src="img/05-skill-02.png"/>
+				<%= image_tag "05-skill-02.png" %>
 				<h4 class="my-skill-title">Wordpress</h4>
 				
 				<!-- End skill Front section -->
@@ -687,7 +687,7 @@ Who I am
 	</div>
 	<!-- End join the team Heading-->
 	
-	<img alt="" src="img/21-content_footer_1.png" class="parallax-content_footer">
+	<%= image_tag "21-content_footer_1.png", class: "parallax-content_footer" %>
 </section>
 <!--end of skill section-->
 <!-- parallaxx section  -->
@@ -707,7 +707,7 @@ Who I am
 <!-- =========== * services Section * =========== -->
 <a id="services-scroll"></a>
 <section id="services" class="skin-primary clearfix">
-<img alt="" src="img/21-content_header_2.png" class="parallax-content_header">
+<%= image_tag "21-content_header_2.png", class: "parallax-content_header" %>
 	<!-- Service section HEading-->
 	<div class="row">
 		<div class="large-12 columns text-center">
@@ -804,7 +804,7 @@ Who I am
 		</div>
 	</div>
 	<!-- End of service section Action button -->		
-	<img alt="" src="img/21-content_footer_2.png" class="parallax-content_footer">
+	<%= image_tag "21-content_footer_2.png", class: "parallax-content_footer" %>
 </section>
 <!--end of Services section-->
 <!-- parallaxx section  -->
@@ -823,7 +823,7 @@ Who I am
 <!-- =========== * Work Section * =========== -->
 <a id="work-scroll"></a>
 <section id="work" class="pad-normal  skin-secondary clearfix">
-<img alt="" src="img/21-content_header_1.png" class="parallax-content_header">
+<%= image_tag "21-content_header_1.png", class: "parallax-content_header" %>
 	<!-- Work section Heading-->
 	<div class="row">
 		<div class="large-12 columns text-center">
@@ -862,7 +862,7 @@ Who I am
 			<li class="project text-center web-design ">
 				<section class="portfolio-item">
 					<div class="project-img-holder">
-						<img alt="Project Image" src="img/07-work.jpg" />
+						<%= image_tag "07-work.jpg", alt: "Project Image" %>
 						<div class="arrow-holder"><div class="arrow-up"></div></div>
 					</div>
 					<!-- Work detail file name  -->
@@ -875,7 +875,7 @@ Who I am
 			<li class="project text-center ui-design ">
 				<section class="portfolio-item">
 					<div class="project-img-holder">
-						<img alt="Project Image" src="img/08-work.jpg" />
+						<%= image_tag "08-work.jpg", alt: "Project Image" %>
 						<div class="arrow-holder"><div class="arrow-up"></div></div>
 					</div>
 					<!-- Work detail file name  -->
@@ -888,7 +888,7 @@ Who I am
 			<li class="project text-center branding ">
 				<section class="portfolio-item">
 					<div class="project-img-holder">
-						<img alt="Project Image" src="img/09-work.jpg" />
+						<%= image_tag "09-work.jpg", alt: "Project Image" %>
 						<div class="arrow-holder"><div class="arrow-up"></div></div>
 					</div>
 					<!-- Work detail file name  -->
@@ -901,7 +901,7 @@ Who I am
 			<li class="project text-center ui-design ">
 				<section class="portfolio-item">
 					<div class="project-img-holder">
-						<img alt="Project Image" src="img/10-work.jpg" />
+						<%= image_tag "10-work.jpg", alt: "Project Image" %>
 						<div class="arrow-holder"><div class="arrow-up"></div></div>
 					</div>
 					<!-- Work detail file name  -->
@@ -914,7 +914,7 @@ Who I am
 			<li class="project text-center web-design ">
 				<section class="portfolio-item">
 					<div class="project-img-holder">
-						<img alt="Project Image" src="img/11-work.jpg" />
+						<%= image_tag "11-work.jpg", alt: "Project Image" %>
 						<div class="arrow-holder"><div class="arrow-up"></div></div>
 					</div>
 					<!-- Work detail file name  -->
@@ -927,7 +927,7 @@ Who I am
 			<li class="project text-center branding ">
 				<section class="portfolio-item">
 					<div class="project-img-holder">
-						<img alt="Project Image" src="img/12-work.jpg" />
+						<%= image_tag "12-work.jpg", alt: "Project Image" %>
 						<div class="arrow-holder"><div class="arrow-up"></div></div>
 					</div>
 					<!-- Work detail file name  -->
@@ -940,7 +940,7 @@ Who I am
 			<li class="project text-center ui-design ">
 				<section class="portfolio-item">
 					<div class="project-img-holder">
-						<img alt="Project Image" src="img/13-work.jpg" />
+						<%= image_tag "13-work.jpg", alt: "Project Image" %>
 						<div class="arrow-holder"><div class="arrow-up"></div></div>
 					</div>
 					<!-- Work detail file name  -->
@@ -953,7 +953,7 @@ Who I am
 			<li class="project text-center branding ">
 				<section class="portfolio-item">
 					<div class="project-img-holder">
-						<img alt="Project Image" src="img/14-work.jpg" />
+						<%= image_tag "14-work.jpg", alt: "Project Image" %>
 						<div class="arrow-holder"><div class="arrow-up"></div></div>
 					</div>
 					<!-- Work detail file name  -->
@@ -1009,27 +1009,27 @@ Who I am
 		<div id="clients" class="skin-secondary">
 			<div class="row client-slider">
 				<div class="client-logo">
-					<img alt="Client Logo" src="img/18-clientlogo.png" />
+					<%= image_tag "18-clientlogo.png", alt: "Client Logo" %>
 				</div>			
 				<div class="client-logo">
-					<img alt="Client Logo" src="img/19-clientlogo.png" />
+        <%= image_tag "19-clientlogo.png", alt: "Client Logo" %>
 				</div>			
 				<div class="client-logo">
-					<img alt="Client Logo" src="img/20-clientlogo.png" />
+					<%= image_tag "20-clientlogo.png", alt: "Client Logo" %>
 				</div>			
 				<div class="client-logo">
-					<img alt="Client Logo" src="img/19-clientlogo.png" />
+					<%= image_tag "19-clientlogo.png", alt: "Client Logo" %>
 				</div>			<div class="client-logo">
-					<img alt="Client Logo" src="img/18-clientlogo.png" />
+					<%= image_tag "18-clientlogo.png", alt: "Client Logo" %>
 				</div>			
 				<div class="client-logo">
-					<img alt="Client Logo" src="img/20-clientlogo.png" />
+					<%= image_tag "20-clientlogo.png", alt: "Client Logo" %>
 				</div>
 			</div>
 		</div>
 		<!--end of clients-->	
 	</div>
-	<img alt="" src="img/21-content_footer_1.png" class="parallax-content_footer">
+	<%= image_tag "21-content_footer_1.png", class: "parallax-content_footer" %>
 </section>
 <!--end of Work section-->
 <!-- Twitter live feed section -->
@@ -1054,7 +1054,7 @@ Who I am
 <!-- =========== * blog Section * =========== -->
 <a id="blog-scroll"></a>
 <section id="blog" class="skin-secondary clearfix">
-<img alt="" src="img/21-content_header_1.png" class="parallax-content_header">
+<%= image_tag "21-content_header_1.png", class: "parallax-content_header" %>
 	<!--blog section Heading -->
 	<div class="row">
 		<div class="large-12 columns text-center">
@@ -1081,7 +1081,7 @@ Who I am
 			<a href="#">
 				<div class="rectangle">
 					<div class="post-date date"><p>20. Dec. 2013</p></div>
-					<div class="blog-circle-img"><img src="img/24-blog-img.jpg" alt=""/></div>
+					<div class="blog-circle-img"><% image_tag "24-blog-img.jpg" %></div>
 					<div class="blogpost-description">
 						<h4>Good ideas are rare</h4>
 						<p>Bower is a package manager for the web which offers a generic, unopinionated solution for the problem of front-end package management.</p>
@@ -1098,10 +1098,10 @@ Who I am
 			<a href="#">
 				<div class="rectangle">
 					<div class="post-date date"><p>20. Dec. 2013</p></div>
-					<div class="blog-circle-img"><img src="img/23-blog-img.jpg" alt=""/></div>
+					<div class="blog-circle-img"><% image_tag "23-blog-img.jpg" %></div>
 					<div class="blogpost-description">
-						<h4>Serving customers well</h4>
-						<p>Bower is a package manager for the web which offers a generic, unopinionated solution for the problem of front-end package management.</p>
+						<h4>serving customers well</h4>
+						<p>bower is a package manager for the web which offers a generic, unopinionated solution for the problem of front-end package management.</p>
 					</div>
 					<div class="plus-container">
 						<div class="fonticon fonticon-plus"></div>
@@ -1109,13 +1109,13 @@ Who I am
 				</div>
 			</a>
 		</div>
-		<!-- End of Individual blog -->
-		<!-- Individual blog -->
+		<!-- end of individual blog -->
+		<!-- individual blog -->
 		<div class="columns">
 			<a href="#">
 				<div class="rectangle">
-					<div class="post-date date"><p>20. Dec. 2013</p></div>
-					<div class="blog-circle-img"><img src="img/24-blog-img.jpg" alt=""/></div>
+					<div class="post-date date"><p>20. dec. 2013</p></div>
+					<div class="blog-circle-img"><% image_tag "24-blog-img.jpg" %></div>
 					<div class="blogpost-description">
 						<h4>Serving customers well</h4>
 						<p>Bower is a package manager for the web which offers a generic, unopinionated solution for the problem of front-end package management.</p>
@@ -1134,7 +1134,7 @@ Who I am
 <!-- =========== * Contact Section * =========== -->
 <a id="contact-scroll"></a>
 <section id="contact" class="skin-primary clearfix">
-<img class="parallax-content_header" src="img/21-content_header_2.png" alt="">
+<%= image_tag "21-content_header_2.png", class: "parallax-content_header" %>
 	<div id="contact-holder">
 		<!-- Contact section heading -->
 		<div class="row">
@@ -1229,38 +1229,29 @@ Who I am
     </div>
 	 <!-- end of slide top link  -->
 </section>
-<!--end of Contact section-->
-<!-- Footer  -->
-<footer class="footer skin-secondary clearfix">
-		<div class="row">
-			<div class="large-12 columns text-center">
-				<p class="text-white copy-text">&copy; Copyright 2013 Birva Design Studio</p>
-			</div>
-		</div>
-</footer>
-<!-- End of Footer  -->
-<!--============================================================-->
-<!-- jquery plugin and custom script -->
+<%= render 'footer' %>
 
-<script src="js/custom.modernizr.js"></script>
-<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="js/foundation.min.js"></script>
-<script src="js/device.min.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/smooth-scroll.js"></script>
-<script src="js/inview.js"></script>
-<script src="js/jquery.easypiechart.min.js"></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/tweetable.jquery.js"></script>
-<script type="text/javascript" src="js/jquery.timeago.js"></script>
-<script src="js/jquery.parallax-1.1.3.js"></script>
-<script src="js/parallaxInit.js"></script>
-<script src="js/jquery.shuffleLetters.js"></script>
-<script src="js/scripts.js"></script>
-<script>
-$(document).foundation();
-</script>
-</body></html>
+<!-- <div> -->
+<!--   <script src="js/custom.modernizr.js"></script> -->
+<!--   <script src="js/jquery&#45;1.10.2.min.js" type="text/javascript"></script> -->
+<!--   <script src="js/foundation.min.js"></script> -->
+<!--   <script src="js/device.min.js"></script> -->
+<!--   <script src="js/jquery.prettyPhoto.js"></script> -->
+<!--   <script type="text/javascript" src="js/jquery.mixitup.min.js"></script> -->
+<!--   <script src="js/jquery.flexslider&#45;min.js"></script> -->
+<!--   <script src="js/smooth&#45;scroll.js"></script> -->
+<!--   <script src="js/inview.js"></script> -->
+<!--   <script src="js/jquery.easypiechart.min.js"></script> -->
+<!--   <script src="js/jquery.appear.js"></script> -->
+<!--   <script src="js/owl.carousel.min.js"></script> -->
+<!--   <script type="text/javascript" src="js/tweetable.jquery.js"></script> -->
+<!--   <script type="text/javascript" src="js/jquery.timeago.js"></script> -->
+<!--   <script src="js/jquery.parallax&#45;1.1.3.js"></script> -->
+<!--   <script src="js/parallaxInit.js"></script> -->
+<!--   <script src="js/jquery.shuffleLetters.js"></script> -->
+<!--   <script src="js/scripts.js"></script> -->
+<!--   <script> -->
+<!-- $(document).foundation(); -->
+<!--   </script> -->
+<!-- </div> -->
+<!-- </body></html> -->
