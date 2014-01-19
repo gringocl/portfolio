@@ -1,6 +1,8 @@
 // PARALLAX CALLING
 //====================================================================
 //====================================================================
+var ready;
+ready = function() {
 ( function ( $ ) {
 'use strict';
 $(document).ready(function(){
@@ -52,3 +54,6 @@ var isMobile = {
     }
 };
 }( jQuery ));
+};
+$(document).ready(ready);
+$(document).on('page:load', ready);

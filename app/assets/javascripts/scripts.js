@@ -1,4 +1,5 @@
-
+var ready;
+ready = function() {
 //Preloader
 $(window).load(function () {
     "use strict";
@@ -397,7 +398,7 @@ $(document).ready(function () {
 
 	//Twitter feed
 	jQuery('#tweets').tweetable({
-		username: 'envato', //twitter username 
+		username: 'm_starkenburg', //twitter username 
 		time: true, 
 		rotate: true, 
 		speed: 7000, 
@@ -412,3 +413,6 @@ $(document).ready(function () {
 		}
 	});
 });
+};
+$(document).ready(ready);
+$(document).on('page:load', ready);

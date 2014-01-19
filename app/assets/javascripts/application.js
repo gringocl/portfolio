@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require custom.modernizr
 //= require device.min
 //= require foundation.min
@@ -34,4 +33,5 @@
 //= require smooth-scroll
 //= require switcher
 //= require tweetable.jquery
+//= require turbolinks
 //= require_tree .

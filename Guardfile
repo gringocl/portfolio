@@ -28,3 +28,9 @@ guard :minitest, spring: 'rake test' do
   # watch(%r{^app/helpers/(.*)\.rb$})     { |m| "test/helpers/#{m[1]}_test.rb" }
   # watch(%r{^app/models/(.*)\.rb$})      { |m| "test/unit/#{m[1]}_test.rb" }
 end
+guard 'ctags-bundler', :src_path => ["app", "lib", "spec/support"] do
+    watch(/^(app|lib|spec\/support)\/.*\.rb$/)
+      watch('Gemfile.lock')
+end
+
+

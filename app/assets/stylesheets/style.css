@@ -773,7 +773,7 @@ p.my-skill-text {
     margin: 0;
     text-align: center;}
 .timestamp{color:#FE8E22;}
-.twitter-teaser-bg{background-image:image-url("21-twitter-bg.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
+.twitter-teaser-bg{background-image:url("21-twitter-bg.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
 
 .twitter-content_footer {
     bottom: 0;

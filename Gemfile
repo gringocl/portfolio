@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'coffee-rails', '~> 4.0.0'
+gem "font-awesome-rails"
 gem 'jbuilder', '~> 1.2'
 gem 'jquery-rails'
 gem 'minitest-rails'
@@ -12,9 +13,11 @@ gem 'uglifier', '>= 1.3.0'
 
 group :test do
   gem "minitest-rails-capybara"
+  gem "turn"
 end
 
 group :development do
+  gem 'guard-ctags-bundler'
   gem 'guard-minitest'
   gem 'spring'
 end
