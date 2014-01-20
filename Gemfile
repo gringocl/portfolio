@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.1.0"
 
 gem 'coffee-rails', '~> 4.0.0'
 gem "font-awesome-rails"
@@ -26,3 +27,4 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'rails_12factor', group: :production
