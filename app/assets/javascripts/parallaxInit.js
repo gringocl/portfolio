@@ -1,13 +1,11 @@
 // PARALLAX CALLING
 //====================================================================
 //====================================================================
-var ready;
-ready = function() {
 ( function ( $ ) {
 'use strict';
 $(document).ready(function(){
 $(window).bind('load', function () {
-		parallaxInit();						  
+		parallaxInit();
 	});
 	function parallaxInit() {
 		testMobile = isMobile.any();
@@ -16,21 +14,21 @@ $(window).bind('load', function () {
 			$('.parallax1-teaser-bg').parallax("50%", 0.4);
 			$('.parallax2-teaser-bg').parallax("50%", 0.4);
 			$('.parallax3-teaser-bg').parallax("50%", 0.4);
-			$('.parallax4-teaser-bg').parallax("50%", 0.4);
+			//$('.parallax4-teaser-bg').parallax("50%", 0.4);
 			//$('.getInTouch-bg').parallax("50%", 0.5);
 			//$('.twitter-bg').parallax("50%", 0.5);
 			//$('.twitter-feed').parallax("50%", 0.5);
 
-			
+
 			//$('.parallax .work-teaser-bg').parallax("50%", 0.5);
 			//$('.parallax .about-teaser-bg').parallax("50%", 0.5);
 			//$('.parallax .team-teaser-bg').parallax("50%", 0.5);
 			//$('.parallax .service-teaser-bg').parallax("50%", 0.5);
 			//$('.parallax .blog-teaser-bg').parallax("50%", 0.01);
 		}
-	}	
-	parallaxInit();	 
-});	
+	}
+	parallaxInit();
+});
 //Mobile Detect
 var testMobile;
 var isMobile = {
@@ -54,6 +52,3 @@ var isMobile = {
     }
 };
 }( jQuery ));
-};
-$(document).ready(ready);
-$(document).on('page:load', ready);

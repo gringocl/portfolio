@@ -5,7 +5,8 @@
  * @url			http://tutorialzine.com/2011/09/shuffle-letters-effect-jquery/
  * @license		MIT License
  */
-
+var ready;
+ready = function() {
 (function($){
 	
 	$.fn.shuffleLetters = function(prop){
@@ -138,3 +139,7 @@
 	}
 	
 })(jQuery);
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);

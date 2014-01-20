@@ -398,7 +398,7 @@ $(document).ready(function () {
 
 	//Twitter feed
 	jQuery('#tweets').tweetable({
-		username: 'm_starkenburg', //twitter username 
+		username: '', //twitter username 
 		time: true, 
 		rotate: true, 
 		speed: 7000, 
