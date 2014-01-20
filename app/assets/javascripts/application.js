@@ -10,13 +10,12 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require jquery-1.10.2.min
 //= require jquery_ujs
 //= require custom.modernizr
 //= require device.min
 //= require foundation.min
 //= require inview
-//= require jquery-1.10.2.min
 //= require jquery.appear
 //= require jquery.easypiechart.min
 //= require jquery.flexslider-min
