@@ -58,9 +58,9 @@ left: 50%;top: 50%;position: absolute;width:50px;margin: -25px 0 0 -25px;}
 	display:block;
 	z-index:2;
 }
-.parallax1-teaser-bg{background-image:url("ripples_bg.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
-.parallax2-teaser-bg{background-image:url("work_bg.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
-.parallax3-teaser-bg{background-image:url("turntable_bg.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
+.parallax1-teaser-bg{background-image: url("ripples_bg.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
+.parallax2-teaser-bg{background-image: url("work_bg.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
+.parallax3-teaser-bg{background-image: url("turntable_bg.jpg");opacity:.8;-webkit-opacity:.8;-moz-opacity:.8;}
 
 .text-white{ color: #fff; }
 .skin-primary {background:#1B2B3B;-webkit-transition: all 2.5s;transition: all 2.5s;-moz-transition: all 2.5s;-o-transition:all 2.5s;}
