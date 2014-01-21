@@ -48,7 +48,7 @@ test:
   encoding: unicode
   database: portfolio_test
   pool: 5
-  username: gringocl
+  username: postgres
   password:
 
 production:
