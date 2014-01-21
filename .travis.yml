@@ -1,8 +1,12 @@
 language: ruby
 rvm:
-  - 2.1.0
+- 2.1.0
 before_script:
-  - psql -c 'create database portfolio_test;' -U postgres
+- psql -c 'create database portfolio_test;' -U postgres
 deploy:
   provider: heroku
-  api_key: "pzXf44D7hlfXRQoc2_viwQ"
+  api_key:
+    secure: UJvuQzIzi6jgCcscdXmM3vJKdIzAdDGVRHwT4/IlQSztgjCeUY4DbfoLTPJbtJCuqIMzbQzyVVnBjH55LgwVRrVUDEXWfrhoVm2W/YiEfNxgTXJmvnjhkrin6vGFwdtltJgeL3cI3i97JBqmsoGYBwYfVRHmYCrBiMAF8ZytByE=
+  app: gringo-portfolio
+  on:
+    repo: gringocl/portfolio
