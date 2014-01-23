@@ -8,7 +8,7 @@ require 'turn/autorun'
 
 Turn.config do |c|
     c.format  = :outline
-    c.trace   = "3"
+    # c.trace   = "9"
     c.natural = true
     c.verbose = true
 end

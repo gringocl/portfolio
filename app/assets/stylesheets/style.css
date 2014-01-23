@@ -104,6 +104,9 @@ font-weight:900;}
 .sub-header:before, .sub-header:after {border-bottom: 0.1em solid rgba(255, 255, 255, 0.5); content: ""; display: inline-block;
     position: absolute;top: 50%; width: 4em;}
 .sub-header:after {right: 0;}
+.sub-header-blog {font-size: 20px;font-style: italic; font-weight: 500;line-height: 32px;
+    text-align: center;text-transform: none;}
+.sub-header-blog {clear:both;display: inline-block;padding: 0 5em;margin-bottom: 1.6em;position: relative;color:#fff;}
 .sub-header {font-size: 20px;font-style: italic; font-weight: 500;line-height: 32px;
     text-align: center;text-transform: none;}
 .sub-header {clear:both;display: inline-block;padding: 0 5em;margin-bottom: 1.6em;position: relative;color:#fff;}

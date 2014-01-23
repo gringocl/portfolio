@@ -1,29 +1,23 @@
-<h1>Listing posts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+<a id="blog-scroll"></a>
+<section id="blog" class="skin-secondary clearfix">
+<div class="row pad-normal">
+  <div class="large-12 columns text-center">
+    <div class="page-title">
+      <h2>Fleeting thoughts and Ramblings</h2>
+    </div>
+      <div class="large-3 columns pad-normal">
+        <p class="sub-header-blog">Miles Starkenburg</p>
+      </div>
+      <div class="large-9 columns pad-normal text-center">
+        <div class="page-title">
+          <% @posts.each do |post| %>
+          <h2><%= link_to post.title, post  %></h2>
+        </div>
+      <div class="text-justify pad-normal">
+        <p><%= post.body  %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<section>

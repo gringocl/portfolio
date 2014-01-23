@@ -17,7 +17,27 @@
   <meta name="author", content="<%= meta_author  %>"/>
 </head>
 <body>
-
-<%= yield %>
+  <nav>
+    <div id="navigation" class="sticky-nav">
+      <div class="row">
+        <div class="large-2 columns">
+          <a href="#"><h5 class="primary-text-color">gringo.io</h5></a>
+        </div>
+        <div id="mobile-toggle" class="right"><i class="fa fa-th-list"></i></div>
+        <div class="large-10 columns">
+          <ul id="menu">
+            <li><a class="smooth-scroll" href="#home-scroll"><h6>Home</h6></a></li>
+            <li><a class="smooth-scroll" href="#about-scroll"><h6>About Me</h6></a></li>
+            <li><a class="smooth-scroll" href="#skill-scroll"><h6>My Skills</h6></a></li>
+            <li><a class="smooth-scroll" href="#services-scroll"><h6>Services</h6></a></li>
+            <li><a class="smooth-scroll" href="#blog-scroll"><h6>Thoughts</h6></a></li>
+            <li><a class="smooth-scroll" href="#contact-scroll"><h6>Contact</h6></a></li>
+            <li><a class="smooth-scroll" href="#services-scroll"><h6>Blog</h6></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ </nav>
+  <%= yield %>
 </body>
 </html>
