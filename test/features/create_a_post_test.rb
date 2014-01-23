@@ -6,7 +6,7 @@ feature "CreateAPost" do
     fill_in('Title', with: 'Becoming a CodeFellow')
     fill_in('Body', with: 'Means striving for excellence')
     click_link_or_button 'Create Post'
-    page.must_have_content 'Success'
+    page.must_have_content 'success'
     page.must_have_content 'Becoming a CodeFellow'
   end
 end

@@ -2,7 +2,7 @@ require "test_helper"
 
 feature "Edit a post" do
   scenario "Edit a post" do
-    visit show_posts_path
+    visit post_path
     click_link_or_button "Edit"
 
     fill_in "Body", with: "Oops I made a mistake"
