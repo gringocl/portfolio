@@ -1,23 +1,23 @@
 <a id="blog-scroll"></a>
 <section id="blog" class="skin-secondary clearfix">
-<div class="row pad-normal">
-  <div class="large-12 columns text-center">
-    <div class="page-title">
-      <h2>Fleeting thoughts and Ramblings</h2>
-    </div>
+  <div class="row pad-normal">
+    <div class="large-12 columns text-center">
+      <div class="page-title">
+        <h2>Fleeting thoughts and Ramblings</h2>
+      </div>
       <div class="large-3 columns pad-normal">
         <p class="sub-header-blog">Miles Starkenburg</p>
       </div>
       <div class="large-9 columns pad-normal text-center">
         <div class="page-title">
           <% @posts.each do |post| %>
-          <h2><%= link_to post.title, post  %></h2>
+            <h2><%= link_to post.title, post  %></h2>
         </div>
-      <div class="text-justify pad-normal">
-        <p><%= post.body  %>
+        <div class="text- pad-normal">
+          <p><%= post.body  %>
       <% end %>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<section>
+  <section>
