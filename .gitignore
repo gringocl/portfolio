@@ -19,3 +19,4 @@
 gems.tags
 /log/*.bak
 
+/doc
