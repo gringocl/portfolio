@@ -11,4 +11,14 @@ feature "Projects::CreateAProject" do
     page.must_have_content "CodeFellows Portfolio"
     page.must_have_content "success"
   end
+
+  scenario "Ensure that Project information is valid" do
+    visit new_project_path
+    fill_in "Name", with: "Q"
+    fill_in "Technologies used", with: ""
+    click_on "Create Project"
+    page.text.must_include "Project could not be saved"
+    page.text.must_include "Name is too short"
+    page.text.must_include "Technologies used can't be blank"
+  end
 end

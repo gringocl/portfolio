@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
     @project = Project.new(project_params)
     if @project.save
       redirect_to @project, notice: 'Project was successfully created!'
-    else
+    else flash.now[:error] = "Project could not be saved"
       render action: 'new'
     end
   end
