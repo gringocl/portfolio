@@ -23,6 +23,8 @@ group :development do
   gem 'guard-ctags-bundler'
   gem 'guard-minitest'
   gem 'spring'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
 end
 
 group :doc do
