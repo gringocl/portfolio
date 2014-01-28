@@ -3,3 +3,4 @@
   <li><%= @project.name  %></li>
   <li><%= @project.technologies_used  %></li>
 </ul>
+<%= link_to 'Delete Project', @project, method: :delete, data: { confirm: 'Are you sure?' }  %>
