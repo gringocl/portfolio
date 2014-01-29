@@ -1,7 +1,9 @@
 one:
   title: 'First Post'
   body: 'First Body!!!'
+  author: matias
 
 two:
   title: 'Second Post'
+  author: matias
   body: 'Second Body!!!'
