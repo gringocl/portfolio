@@ -13,10 +13,21 @@ Turn.config do |c|
     c.verbose = true
 end
 
+class ActionDispatch::IntegrationTest
+  include Rails.application.routes.url_helpers
+  include Capybara::DSL
+end
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+end
+
+def sign_in(role = :editor)
+  visit new_user_session_path
+  fill_in "Email", with: users(role).email
+  fill_in "Password", with: "password"
+  page.find("[type='submit']").click
 end

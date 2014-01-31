@@ -2,8 +2,10 @@ one:
   title: 'First Post'
   body: 'First Body!!!'
   author: matias
+  published: true
 
 two:
   title: 'Second Post'
   author: matias
   body: 'Second Body!!!'
+  published: false

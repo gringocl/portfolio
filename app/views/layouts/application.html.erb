@@ -35,14 +35,14 @@
             <li><a class="smooth-scroll" href="#services-scroll"><h6>Blog</h6></a></li>
             <% if current_user %>
             <li><%= link_to destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure?' } do  %>
-                  <h6>Sign Out</h6>></li>
+                  <h6>Sign Out</h6></li>
                 <% end %>
               <% else %>
             <li><%= link_to new_user_registration_path do  %>
-                  <h6>Sign Up</h6>></li>
+                  <h6>Sign Up</h6></li>
                 <% end %>
             <li><%= link_to user_session_path do  %>
-                  <h6>Sign In</h6>></li>
+                  <h6>Sign In</h6></li>
                 <% end %>
               <% end %>
           </ul>
