@@ -8,7 +8,7 @@ feature "CreateAPost" do
     fill_in('Body', with: 'Means striving for excellence')
     page.find("[type='submit']").click
     page.must_have_content 'success'
-    
+
     page.must_have_content 'Becoming a CodeFellow'
     page.has_css? "#author"
     page.text.must_include "Status: Unpublished"
@@ -28,7 +28,7 @@ feature "CreateAPost" do
   scenario "authors can't publish" do
     sign_in(:author)
     visit new_post_path
-    page.wont_have_field('published')
+    page.wont_have_field('Published')
   end
 
   scenario "editors can publish" do
@@ -40,8 +40,7 @@ feature "CreateAPost" do
     fill_in "Body", with: posts(:one).body
     check "Published"
     click_on "Create Post"
-
-    page.text.must_include "Status: Published"
+    page.text.must_include "Published"
   end
 
 end
