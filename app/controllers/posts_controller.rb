@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_current_user
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -20,6 +19,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    policy @post
     current_user.posts << @post
     respond_to do |format|
       if @post.save
@@ -57,10 +57,6 @@ class PostsController < ApplicationController
 
     def set_post
       @post = Post.find(params[:id])
-    end
-
-    def set_current_user
-      current_user
     end
 
     def post_params

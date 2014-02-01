@@ -3,7 +3,6 @@ one:
   body: 'First Body!!!'
   author: matias
   published: true
-
 two:
   title: 'Second Post'
   author: matias
