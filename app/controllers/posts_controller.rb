@@ -3,54 +3,41 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   def index
-    @posts = Post.all
+    @posts = policy_scope(Post.all)
   end
 
   def show
   end
 
   def new
-    @post = Post.new
+    @post = current_user.posts.new
   end
 
   def edit
-    current_user.posts << @post
   end
 
   def create
-    @post = Post.new(post_params)
-    policy @post
-    current_user.posts << @post
-    respond_to do |format|
-      if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @post }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
-      end
+    @post = current_user.posts.new(post_params)
+    authorize @post
+    if @post.save
+      redirect_to @post, notice: 'Post was successfully created.'
+    else
+      render action: 'new'
     end
   end
 
   def update
-    current_user.posts << @post
-    respond_to do |format|
-      if @post.update(post_params)
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
-      end
+    if @post.update(post_params)
+      redirect_to @post, notice: 'Post was successfully updated.'
+    else
+      render action: 'edit'
     end
   end
 
   def destroy
     @post.destroy
-    respond_to do |format|
-      format.html { redirect_to posts_url }
-      format.json { head :no_content }
-    end
+    authorize @post
+    redirect_to posts_url
   end
 
   private
