@@ -33,13 +33,11 @@ feature "CreateAPost" do
 
   scenario "editors can publish" do
     sign_in(:editor)
-    visit new_post_path
-    page.must_have_field('Published')
+    visit edit_post_path(posts(:two))
 
-    fill_in "Title", with: posts(:one).title
-    fill_in "Body", with: posts(:one).body
+    save_and_open_page
     check "Published"
-    click_on "Create Post"
+    click_on "Update Post"
     page.text.must_include "Published"
   end
 

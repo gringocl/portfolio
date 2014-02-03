@@ -1,8 +1,9 @@
 Portfolio::Application.routes.draw do
-  resources :comments
 
-  devise_for :users
-  resources :posts
+  devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
+  resources :posts do
+    resources :comments, only: [:create, :destroy, :update ]
+  end
   resources :projects
 # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

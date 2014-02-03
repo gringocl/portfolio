@@ -14,6 +14,9 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'devise'
 gem 'pundit'
+gem 'simple_form'
+gem 'omniauth-twitter'
+gem 'figaro'
 
 group :test do
   gem "minitest-rails-capybara"
@@ -27,6 +30,8 @@ group :development do
   gem 'spring'
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :doc do

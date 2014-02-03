@@ -4,6 +4,7 @@ require "rails/test_help"
 require "minitest/rails"
 require "minitest/rails/capybara"
 require "minitest/pride"
+require 'pry-rescue/minitest'
 require 'turn/autorun'
 
 Turn.config do |c|

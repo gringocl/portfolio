@@ -19,6 +19,11 @@ class PostPolicy < ApplicationPolicy
     user.editor? || !post.published?
   end
 
+  def update?
+    return unless user.present?
+    user.editor? && !post.published?
+  end
+
   def destroy?
     user.editor? && post.published?
     user.author? && !post.published?

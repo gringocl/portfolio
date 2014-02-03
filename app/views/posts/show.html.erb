@@ -1,22 +1,40 @@
 <p id="notice"><%= notice %></p>
 
-<p id="author">
-  <strong>By:</strong>
+<p id="author"> <strong>By:</strong>
   <%= @post.author.email %>
 </p>
-<p>
-  <strong>Title:</strong>
+
+<p><strong>Title:</strong>
   <%= @post.title %>
 </p>
 
-<p>
-  <strong>Body:</strong>
+<p><strong>Body:</strong>
   <%= @post.body %>
 </p>
-<p id="status">
-  <b>Status:</b>
+
+<p id="status"><b>Status:</b>
   <%= @post.published? ? "Published" : "Unpublished" %>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
+<p id="comments"><b>Comments:</b>
+  <% @post.comments.each do |c|  %>
+    <%= c.content  %>
+    <% if policy(c).update? %>
+      <p id="approved"><b>Aprroved:</b>
+        <%= c.approved? ? "Approved" : (link_to 'Approve!', [@post, c], method: :put) %>
+      </p>
+    <% end %>
+    <% if policy(c).delete? %>
+      <p id="destroy">
+      <%= c.approved? ? (link_to 'Delete Comment', [@post, c], method: :delete, data: { confirm: 'Are you sure?' }) : '' %>
+      </p>
+    <% end %>
+  <% end %>
+<p><%= simple_form_for [@post, @post.comments.build] do |f|  %></p>
+  <%= f.input :content, label: 'Comment'  %>
+  <%= f.button :submit  %>
+    <% end %>
+  <% if policy(@post).update? %>
+    <%= link_to 'Edit', edit_post_path(@post) %>
+  <% end  %>
 <%= link_to 'Back', posts_path %>
