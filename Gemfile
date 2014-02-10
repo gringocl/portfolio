@@ -22,6 +22,7 @@ group :test do
   gem "minitest-rails-capybara"
   gem "launchy"
   gem "turn"
+  gem 'simplecov', require: false
 end
 
 group :development do

@@ -21,7 +21,7 @@ class PostPolicy < ApplicationPolicy
 
   def update?
     return unless user.present?
-    user.editor? && !post.published?
+    user.editor?
   end
 
   def destroy?

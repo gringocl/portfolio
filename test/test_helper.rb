@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start 'rails'
+
 ENV["RAILS_ENV"] = "test"
 require File.expand_path("../../config/environment", __FILE__)
 require "rails/test_help"
@@ -5,7 +8,7 @@ require "minitest/rails"
 require "minitest/rails/capybara"
 require "minitest/pride"
 require 'pry-rescue/minitest'
-require 'turn/autorun'
+# require 'turn/autorun'
 
 Turn.config do |c|
     c.format  = :outline
