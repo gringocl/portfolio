@@ -14,7 +14,6 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'devise'
 gem 'pundit'
-gem 'simple_form'
 gem 'omniauth-twitter'
 gem 'figaro'
 

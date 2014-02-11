@@ -3,9 +3,9 @@ require "test_helper"
 feature "As a user I want to be able to sign up for an account" do
   scenario "sign up" do
     visit new_user_registration_path
-    save_and_open_page
     fill_in "Email", with: "condorito@example.com"
-    find('input#user_password').fill_in 'Password', with: 'password1'
+    fill_in "input#user_password", with: 'password1'
+    save_and_open_page
     find('#user_password_confirmation').fill_in "Password Confirmation", with: "password1"
     click_on "Sign up"
     page.must_have_content "Welcome"

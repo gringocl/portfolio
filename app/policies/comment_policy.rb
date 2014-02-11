@@ -6,8 +6,10 @@ class CommentPolicy < ApplicationPolicy
   end
 
   def permitted_attributes
-    if !user.present?
+    if user.present?
       [:content, :post_id]
+    else user.editor?
+      [:approved]
     end
   end
 
