@@ -1,4 +1,9 @@
 class CommentsController < ApplicationController
+  def new
+    @post = Post.find params[:post_id]
+    @comment = @post.comments.build
+  end
+
   def update
     @comment = Comment.find(params[:id])
     @comment.approve!
@@ -12,10 +17,14 @@ class CommentsController < ApplicationController
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(comments_params)
-    if @comment.save
-      redirect_to @post, notice: 'Thank you for your comment'
-    else flash.now[:error] = "There was an error with your comment"
-      render @post
+    respond_to do |format|
+      format.html {
+        if @comment.save
+          redirect_to @post, notice: 'Thank you for your comment'
+        else flash.now[:error] = "There was an error with your comment"
+          render @post
+        end }
+      format.js
     end
   end
 

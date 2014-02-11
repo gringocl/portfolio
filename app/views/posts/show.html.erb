@@ -1,40 +1,29 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <section id="post" class="skin-secondary clearfix">
+    <p id="notice"><%= notice %></p>
 
-<p id="author"> <strong>By:</strong>
-  <%= @post.author.email %>
-</p>
+    <p id="author"> <strong>By:</strong>
+    <%= @post.author.email %>
+    </p>
 
-<p><strong>Title:</strong>
-  <%= @post.title %>
-</p>
+    <p><strong>Title:</strong>
+    <%= @post.title %>
+    </p>
 
-<p><strong>Body:</strong>
-  <%= @post.body %>
-</p>
+    <p><strong>Body:</strong>
+    <%= @post.body %>
+    </p>
 
-<p id="status"><b>Status:</b>
-  <%= @post.published? ? "Published" : "Unpublished" %>
-</p>
+    <p id="status"><b>Status:</b>
+    <%= @post.published? ? "Published" : "Unpublished" %>
+    </p>
 
-<p id="comments"><b>Comments:</b>
-  <% @post.comments.each do |c|  %>
-    <%= c.content  %>
-    <% if policy(c).update? %>
-      <p id="approved"><b>Aprroved:</b>
-        <%= c.approved? ? "Approved" : (link_to 'Approve!', [@post, c], method: :put) %>
-      </p>
-    <% end %>
-    <% if policy(c).delete? %>
-      <p id="destroy">
-      <%= c.approved? ? (link_to 'Delete Comment', [@post, c], method: :delete, data: { confirm: 'Are you sure?' }) : '' %>
-      </p>
-    <% end %>
-  <% end %>
-<p><%= simple_form_for [@post, @post.comments.build] do |f|  %></p>
-  <%= f.input :content, label: 'Comment'  %>
-  <%= f.button :submit  %>
-    <% end %>
-  <% if policy(@post).update? %>
-    <%= link_to 'Edit', edit_post_path(@post) %>
+    <p id="comments"><b>Comments:</b>
+     <%= render @post.comments %>
+  <%= link_to 'Add Comment', new_post_comment_path(@post), id: "add_comment", remote: true  %>
+  | <% if policy(@post).update? %>
+  <%= link_to 'Edit Post', edit_post_path(@post), id: "edit_comment"  %>
   <% end  %>
-<%= link_to 'Back', posts_path %>
+    <%= link_to 'Back', posts_path %>
+  </section>
+</div>
