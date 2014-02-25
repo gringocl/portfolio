@@ -3,11 +3,11 @@
 </h4>
   <% if policy(comment).update? %>
     <p id="approved"><b>Aprroved:</b>
-  <%= comment.approved? ? "Approved" : (link_to 'Approve!', [@post, comment], method: :put) %>
+  <%= comment.approved? ? "Approved" : (link_to 'Approve!', [@commentable, comment], method: :put) %>
     </p>
   <% end %>
   <% if policy(comment).delete? %>
     <p id="destroy">
-  <%= comment.approved? ? (link_to 'Delete Comment', [@post, comment], method: :delete, data: { confirm: 'Are you sure?' }) : '' %>
+  <%= comment.approved? ? (link_to 'Delete Comment', [@commentable, comment], method: :delete, data: { confirm: 'Are you sure?' }) : '' %>
     </p>
   <% end %>

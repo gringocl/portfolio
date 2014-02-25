@@ -10,6 +10,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
+    @commentable = @project
   end
 
   def edit

@@ -19,8 +19,8 @@ gem 'figaro'
 
 group :test do
   gem "minitest-rails-capybara"
+  gem "capybara-webkit"
   gem "launchy"
-  gem "turn"
   gem 'simplecov', require: false
 end
 
@@ -28,6 +28,9 @@ group :development do
   gem 'guard-ctags-bundler'
   gem 'guard-minitest'
   gem 'spring'
+  gem 'pry-rails'
+  gem 'pry-nav'
+  gem 'jist'
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
   gem 'better_errors'

@@ -4,7 +4,6 @@ feature "Edit a post" do
   scenario "Edit a post" do
     sign_in(:editor)
     visit post_path(posts(:one))
-    save_and_open_page
     click_link_or_button "Edit"
 
     fill_in "Body", with: "Oops I made a mistake"

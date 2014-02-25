@@ -8,14 +8,9 @@ require "minitest/rails"
 require "minitest/rails/capybara"
 require "minitest/pride"
 require 'pry-rescue/minitest'
-# require 'turn/autorun'
 
-# Turn.config do |c|
-#     c.format  = :outline
-#     c.trace   = "0"
-#     c.natural = true
-#     c.verbose = true
-# end
+
+Capybara.javascript_driver = :webkit
 
 class ActionDispatch::IntegrationTest
   include Rails.application.routes.url_helpers

@@ -4,9 +4,8 @@ feature "As a user I want to be able to sign up for an account" do
   scenario "sign up" do
     visit new_user_registration_path
     fill_in "Email", with: "condorito@example.com"
-    fill_in "input#user_password", with: 'password1'
-    save_and_open_page
-    find('#user_password_confirmation').fill_in "Password Confirmation", with: "password1"
+    fill_in "Password", with: 'password1'
+    fill_in "Password confirmation", with: 'password1'
     click_on "Sign up"
     page.must_have_content "Welcome"
     page.wont_have_content "errors"
@@ -24,7 +23,6 @@ feature "As a user I want to be able to sign up for an account" do
                              info: { nickname: 'test_twitter_user'},
                              })
     click_on "Sign in with Twitter"
-    save_and_open_page
     page.must_have_content "test_twitter_user, you are signed in!"
   end
 end

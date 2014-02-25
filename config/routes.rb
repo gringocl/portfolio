@@ -4,7 +4,9 @@ Portfolio::Application.routes.draw do
   resources :posts do
     resources :comments, only: [:create, :destroy, :update, :new]
   end
-  resources :projects
+  resources :projects do
+    resources :comments, only: [:create, :destroy, :update, :new]
+  end
 # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

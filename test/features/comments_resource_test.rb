@@ -1,9 +1,10 @@
 require "test_helper"
 
 feature "I want to troll blog authors" do
-  scenario "Create comment as site visitor" do
+  scenario "Create comment as site visitor", js: true do
     visit post_path(posts(:one))
-    fill_in('Comment', with: 'Cool post but you still suck as a writer')
+    click_on "Add Comment"
+    fill_in 'Comment', with: 'Cool post but you still suck as a writer'
     page.find("[type='submit']").click
     page.must_have_content 'Cool post but you still suck as a writer'
   end
@@ -28,4 +29,16 @@ feature "I want to troll blog authors" do
     page.find("a[data-confirm][href='#{post_comment_path posts(:one), comments(:approved)}']").click
     page.wont_have_content comments(:approved).content
   end
+end
+
+feature "I want to comment on projects" do
+  scenario "Create comment in a project", js: true do
+    sign_in(:matias)
+    visit project_path(projects(:portfolio))
+    click_on "Add Comment"
+    fill_in 'Comment', with: 'Cool post but you still suck as a writer'
+    page.find("[type='submit']").click
+    page.must_have_content 'Cool post but you still suck as a writer'
+  end
+after { page.driver.reset! }
 end

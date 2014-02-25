@@ -35,7 +35,6 @@ feature "CreateAPost" do
     sign_in(:editor)
     visit edit_post_path(posts(:two))
 
-    save_and_open_page
     check "Published"
     click_on "Update Post"
     page.text.must_include "Published"

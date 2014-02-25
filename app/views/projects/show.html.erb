@@ -3,4 +3,11 @@
   <li><%= @project.name  %></li>
   <li><%= @project.technologies_used  %></li>
 </ul>
+    <p id="comments"><b>Comments:</b>
+     <%= render @project.comments %>
+     <%= link_to 'Add Comment', new_project_comment_path(@project), id: "add_comment", remote: true  %>
+  | <% if policy(@project).update? %>
+  <%= link_to 'Edit project', edit_project_path(@project), id: "edit_comment"  %>
+  <% end  %>
+    <%= link_to 'Back', @project %>
 <%= link_to 'Delete Project', @project, method: :delete, data: { confirm: 'Are you sure?' }  %>
