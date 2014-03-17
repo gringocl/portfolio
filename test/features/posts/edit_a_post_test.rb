@@ -2,6 +2,7 @@ require "test_helper"
 
 feature "Edit a post" do
   scenario "Edit a post" do
+    sign_in(:editor)
     visit post_path(posts(:one))
     click_link_or_button "Edit"
 

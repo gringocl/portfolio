@@ -1,0 +1,43 @@
+approved:
+  author: 'twitter_troll'
+  author_url: 'trolling.com'
+  author_email: 'troll@example.com'
+  user_ip: '1.1.1.1'
+  user_agent: 'twitter'
+  referrer: 'referrer'
+  content: 'This post is awesome, but you suck!'
+  approved: true
+  commentable: one (Post)
+
+unapproved:
+  author: 'A friend'
+  author_url: 'gringo.io'
+  author_email: 'friend@example.com'
+  user_ip: '1.1.1.2'
+  user_agent: 'twitter'
+  referrer: 'referrer'
+  content: 'Love your blog!'
+  approved: false
+  commentable: one (Post)
+
+great_project:
+  author: 'A friend'
+  author_url: 'gringo.io'
+  author_email: 'friend@example.com'
+  user_ip: '1.1.1.2'
+  user_agent: 'twitter'
+  referrer: 'referrer'
+  content: 'Great Project!'
+  approved: false
+  commentable: freelance (Project)
+
+love_the_proect:
+  author: 'A friend'
+  author_url: 'gringo.io'
+  author_email: 'friend@example.com'
+  user_ip: '1.1.1.2'
+  user_agent: 'twitter'
+  referrer: 'referrer'
+  content: 'Love your blog!'
+  approved: false
+  commentable: freelance (Project)

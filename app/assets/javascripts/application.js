@@ -34,3 +34,7 @@
 //= require tweetable.jquery
 //= require turbolinks
 //= require_tree .
+$(document).ajaxError(function(event, xhr, settings, exception) {
+  console.log(xhr)
+  alert(xhr.responseText);
+});

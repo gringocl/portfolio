@@ -19,3 +19,8 @@
 gems.tags
 /log/*.bak
 
+/doc
+
+# Ignore application configuration
+/config/application.yml
+/coverage/*

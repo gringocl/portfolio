@@ -1,0 +1,4 @@
+    <p><%= form_for [@commentable, @commentable.comments.build], remote: true  do |f|  %></p>
+      <%= f.text_area :content, placeholder: 'Comment'  %>
+    <%= f.button :submit  %>
+  <% end %>
