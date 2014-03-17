@@ -17,6 +17,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = @commentable.comments.create(comments_params)
+    authorize @comment
     respond_to do |format|
       format.html do
           if @comment.save

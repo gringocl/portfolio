@@ -13,6 +13,10 @@ class CommentPolicy < ApplicationPolicy
     end
   end
 
+  def create?
+    user.present?
+  end
+
   def update?
     return unless user.present?
     user.editor? || user.author?
